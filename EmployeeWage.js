@@ -84,3 +84,6 @@ while(totalEmpHrs <= MAX_HRS_IN_MONTH && totalWorkingDays < NO_OF_WORKING_DAYS)
 }
 empWage=totalEmpHrs*WAGE_PER_HOUR;
 console.log("UC5 Total No of Days: "+totalWorkingDays+" Total Hrs Worked: "+totalEmpHrs+ "Total Employee Wage: "+empWage);
+
+// UC6 Store Daily Wage
+dailyWages.forEach(p=> console.log("UC6 DailyWage on day is "+ p));
