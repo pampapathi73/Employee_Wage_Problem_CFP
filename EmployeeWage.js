@@ -54,3 +54,14 @@ function GetWorkingHours(empCheck)
 empCheck=Math.floor(Math.random()*10)%3;
 empHrs=GetWorkingHours(empCheck);
 console.log("UC3 Employee hours: "+empHrs);
+
+// UC 4
+// Calculates wage for a total month
+const NO_OF_WORKING_DAYS=20;
+for(let day=0; day<NO_OF_WORKING_DAYS; day++)
+{
+    empCheck=Math.floor(Math.random()*10)%3;
+    empHrs+=GetWorkingHours(empCheck);
+}
+empWage=empHrs*WAGE_PER_HOUR;
+console.log("UC4 Total Hrs: "+empHrs+" Employee Wage: "+empWage);
