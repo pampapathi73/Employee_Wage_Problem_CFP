@@ -134,3 +134,15 @@ function NoOfDaysWorked(total, dailyWage)
 }
 let totalDaysWorked = dailyWages.reduce(NoOfDaysWorked,0);
 console.log("UC 7G Total no of days worked : "+totalDaysWorked);
+
+// UC 8 Create Map to store daily wage
+let dailyWageDayMap = new Map();
+let day = 0;
+for(const element of dailyWages)
+{
+    day++;
+    dailyWageDayMap.set(day,element);
+}
+for([key,value] of dailyWageDayMap) 
+console.log("UC 8 The wage of day "+key+" is "+value);
+console.log("UC 8 Total Wage through Map is "+Array.from(dailyWageDayMap.values()).reduce(CalculateTotalWage));
